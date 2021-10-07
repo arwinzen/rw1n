@@ -5,6 +5,7 @@ contactCard = document.querySelector('.contact-card');
 formWrapper = document.querySelector('.form-wrapper');
 contactInfo = document.querySelector('.contact-info');
 canvasOverlay = document.querySelector('.canvas-overlay');
+navContent = document.querySelector('.nav-content');
 
 menuBtn.addEventListener('click', displayMenu);
 
@@ -36,6 +37,45 @@ function openBtn(e){
         translateY: '0px',
         duration: 1000
     });
+}
+
+function revealMenu(e){
+    let t1 = anime.timeline({
+        easing:'linear',
+        duration: 500
+    })
+
+    t1.add({
+        targets: canvasOverlay,
+        display: 'flex',
+        opacity: 1,
+        width: '100%',
+        height: '100%'
+    })
+    .add({
+        targets: navContent,
+        opacity: 1
+    })
+}
+
+function hideMenu(e){
+    let t1 = anime.timeline({
+        easing: 'linear',
+        duration: 500
+    })
+
+    t1
+    .add({
+        targets: navContent,
+        opacity: 0,
+    })
+    .add({
+        targets: canvasOverlay,
+        display: 'none',
+        opacity: 0,
+        width: '0',
+        height: '0',
+    })
 }
 
 function revealForm(){
@@ -87,11 +127,13 @@ function displayMenu(e){
         showMenu = true;
         canvasOverlay.style.display = 'flex';
         body.style.overflow = 'hidden';
+        revealMenu(e);
         closeBtn(e);
     } else {
         console.log('hide canvas');
         showMenu = false;
         canvasOverlay.style.display = 'none';
+        hideMenu(e);
         body.style.overflow = 'scroll';
         openBtn(e);
     }
@@ -124,5 +166,19 @@ function displayForm(e){
         openBtn();
         hideForm();
         body.style.overflow = 'scroll';
+    }
+}
+
+contactCard.addEventListener('submit', handleSubmit);
+
+function handleSubmit(e){
+    console.log(e.target);
+    e.preventDefault();
+    if (e.target && e.target.matches('.contact-form')){
+        console.log('submitted');
+        openBtn();
+        hideForm();
+        body.style.overflow = 'scroll';
+        alert('Your message has been submitted!');
     }
 }
