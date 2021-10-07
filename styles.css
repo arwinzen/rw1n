@@ -21,6 +21,11 @@ nav {
     margin: 1.25em;
 }
 
+p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
 .nav-header-text {
     text-transform: uppercase;
     font-size: 1.5em;
@@ -134,7 +139,7 @@ a {
 	max-width: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
-	margin: 180px auto 0;
+	margin: 200px auto 0;
 	padding: 40px
 }
 
@@ -274,10 +279,6 @@ a {
 }
 
 .project-4 {
-    /* background: rgb(35, 104, 131); */
-    /* background-image: url(images/coffee-2.jpg); */
-    /* background-size: contain ; */
-    /* background-position: 50% 50%; */
     background-color: #EED3B7;
 
 }
@@ -302,6 +303,27 @@ a {
     align-items: center;
     text-align: left;
     margin-top: 0;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.hero-description p a:hover {
+    text-decoration: underline;
+}
+
+.hero-greeting {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.hero-text {
+    font-size: 25px;
+    line-height: 35px;
 }
 
 .hero-image {
@@ -508,8 +530,14 @@ label {
     .section-header {
         font-size: 15vw;
     }
+    .grid-item-header {
+        font-size: 8vw;
+    }
     .hero-section {
         grid-template-columns: 1fr;
+    }
+    .hero-text {
+        font-size: 5vw;
     }
     .hero-image {
         display: none;
