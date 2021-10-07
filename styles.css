@@ -5,7 +5,6 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    /* overflow: hidden; */
 }
 
 body {
@@ -49,7 +48,8 @@ p {
 	letter-spacing: 1px;
 	text-decoration: none;
 	transition: color 0.25s ease-in-out;
-	transform: translateZ(0)
+    /* hover effect takes up entire screen if this isn't present*/
+	transform: translateZ(0);
 }
 
 .nav-link:hover {

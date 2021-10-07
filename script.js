@@ -1,11 +1,11 @@
-body = document.querySelector('body');
-menuBtn = document.querySelector('.menu-btn');
-openForm = document.querySelector('.open-form');
-contactCard = document.querySelector('.contact-card');
-formWrapper = document.querySelector('.form-wrapper');
-contactInfo = document.querySelector('.contact-info');
-canvasOverlay = document.querySelector('.canvas-overlay');
-navContent = document.querySelector('.nav-content');
+const body = document.querySelector('body'),
+      menuBtn = document.querySelector('.menu-btn'),
+      openForm = document.querySelector('.open-form'),
+      contactCard = document.querySelector('.contact-card'),
+      formWrapper = document.querySelector('.form-wrapper'),
+      contactInfo = document.querySelector('.contact-info'),
+      canvasOverlay = document.querySelector('.canvas-overlay'),
+      navContent = document.querySelector('.nav-content');
 
 menuBtn.addEventListener('click', displayMenu);
 
