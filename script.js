@@ -7,8 +7,6 @@ const body = document.querySelector('body'),
       canvasOverlay = document.querySelector('.canvas-overlay'),
       navContent = document.querySelector('.nav-content');
 
-menuBtn.addEventListener('click', displayMenu);
-
 function closeBtn(e){
     anime({
         targets: '.menu-icon-line-1',
@@ -120,6 +118,8 @@ function hideForm(){
 
 let showMenu = false
 
+menuBtn.addEventListener('click', displayMenu);
+
 function displayMenu(e){
     console.dir(e);
     if (!showMenu){
@@ -146,7 +146,9 @@ function menuNavigation(e){
     if (e.target && e.target.matches('a')){
         console.log('anchor tag');
         showMenu = false;
-        canvasOverlay.style.display = 'none';
+        // canvasOverlay.style.display = 'none';
+        hideMenu(e);
+        openBtn(e);
         body.style.overflow = 'scroll';
     }
 }

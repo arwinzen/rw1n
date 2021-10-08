@@ -10,7 +10,7 @@ html {
 body {
     height: 800px;
     font-family: "Inter", sans-serif;
-    background-color: #fffff9;
+    background-color: #fffffe;
     text-align: center;
 }
 
@@ -225,6 +225,11 @@ a {
 	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
+.grid-item i {
+    font-size: 3.5em;
+    color: black;
+}
+
 .grid-item-divider-left {
 	margin-left: 0;
 	right: initial;
@@ -270,25 +275,25 @@ a {
 }
 
 .project-2 {
-    background-color: #f7f6d2;
+    background-color: #aa4d4d;
 }
 
 .project-3 {
-    background: black;
+    background: rgb(31, 29, 29);
     color: white;
 }
 
 .project-4 {
-    background-color: #EED3B7;
+    background-color: #dfeeda;
 
 }
 
 .article-1 {
-    background-color: #3bab87;
+    background-color: #74C69D;
 }
 
 .article-2 {
-    background-color: #FDF0EC;
+    background-color: #b67c89;
 }
 
 .article-3 {
