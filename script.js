@@ -160,10 +160,10 @@ function displayForm(e){
     if (e.target && e.target.matches('.open-form')){
         console.log('hey');
         // formWrapper.style.display = 'block';
+        window.scrollTo(0,document.body.scrollHeight);
         body.style.overflow = 'hidden';
         revealForm();
         closeBtn();
-        
     } else if (e.target && e.target.matches('.btn-open') || e.target.matches('.menu-icon-line')){
         openBtn();
         hideForm();
