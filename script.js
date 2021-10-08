@@ -76,45 +76,45 @@ function hideMenu(e){
     })
 }
 
-function revealForm(){
-    let t1 = anime.timeline({
-        easing: 'linear',
-        duration: 500
-    })
+// function revealForm(){
+//     let t1 = anime.timeline({
+//         easing: 'linear',
+//         duration: 500
+//     })
 
-    t1
-    .add({
-        targets: formWrapper,
-        display: 'block',
-        opacity: 1,
-        width: '100%',
-        height: '100%',
-    })
-    .add({
-        targets: '.contact-form',
-        opacity: 1,
-    })
-}
+//     t1
+//     .add({
+//         targets: formWrapper,
+//         display: 'block',
+//         opacity: 1,
+//         width: '100%',
+//         height: '100%',
+//     })
+//     .add({
+//         targets: '.contact-form',
+//         opacity: 1,
+//     })
+// }
 
-function hideForm(){
-    let t1 = anime.timeline({
-        easing: 'linear',
-        duration: 500
-    })
+// function hideForm(){
+//     let t1 = anime.timeline({
+//         easing: 'linear',
+//         duration: 500
+//     })
 
-    t1
-    .add({
-        targets: '.contact-form',
-        opacity: 0,
-    })
-    .add({
-        targets: formWrapper,
-        display: 'none',
-        opacity: 0,
-        width: '0',
-        height: '0',
-    })
-}
+//     t1
+//     .add({
+//         targets: '.contact-form',
+//         opacity: 0,
+//     })
+//     .add({
+//         targets: formWrapper,
+//         display: 'none',
+//         opacity: 0,
+//         width: '0',
+//         height: '0',
+//     })
+// }
 
 let showMenu = false
 
@@ -153,34 +153,34 @@ function menuNavigation(e){
     }
 }
 
-contactCard.addEventListener('click', displayForm);
+// contactCard.addEventListener('click', displayForm);
 
-function displayForm(e){
-    console.dir(e.target);
-    if (e.target && e.target.matches('.open-form')){
-        console.log('hey');
-        // formWrapper.style.display = 'block';
-        window.scrollTo(0,document.body.scrollHeight);
-        body.style.overflow = 'hidden';
-        revealForm();
-        closeBtn();
-    } else if (e.target && e.target.matches('.btn-open') || e.target.matches('.menu-icon-line')){
-        openBtn();
-        hideForm();
-        body.style.overflow = 'scroll';
-    }
-}
+// function displayForm(e){
+//     console.dir(e.target);
+//     if (e.target && e.target.matches('.open-form')){
+//         console.log('hey');
+//         // formWrapper.style.display = 'block';
+//         window.scrollTo(0,document.body.scrollHeight);
+//         body.style.overflow = 'hidden';
+//         revealForm();
+//         closeBtn();
+//     } else if (e.target && e.target.matches('.btn-open') || e.target.matches('.menu-icon-line')){
+//         openBtn();
+//         hideForm();
+//         body.style.overflow = 'scroll';
+//     }
+// }
 
-contactCard.addEventListener('submit', handleSubmit);
+// contactCard.addEventListener('submit', handleSubmit);
 
-function handleSubmit(e){
-    console.log(e.target);
-    e.preventDefault();
-    if (e.target && e.target.matches('.contact-form')){
-        console.log('submitted');
-        openBtn();
-        hideForm();
-        body.style.overflow = 'scroll';
-        alert('Your message has been submitted!');
-    }
-}
+// function handleSubmit(e){
+//     console.log(e.target);
+//     e.preventDefault();
+//     if (e.target && e.target.matches('.contact-form')){
+//         console.log('submitted');
+//         openBtn();
+//         hideForm();
+//         body.style.overflow = 'scroll';
+//         alert('Your message has been submitted!');
+//     }
+// }

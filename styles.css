@@ -278,12 +278,12 @@ a {
 }
 
 .project-4 {
-    background-color: #74C69D;
+    background-color:  #74C69D;
 
 }
 
 .article-1 {
-    background-color: #74C69D;
+    background-color:  #98bec8;
 }
 
 .article-2 {
@@ -291,7 +291,7 @@ a {
 }
 
 .article-3 {
-    background-color: #98bec8;
+    background-color: #74C69D;
 }
 
 .hero-section {
@@ -365,6 +365,14 @@ a {
 
 .contact-info * {
     padding: 1vh 3vw;
+}
+
+.contact-info * {
+    color: ivory;
+}
+
+.open-form {
+    font-size: 4em;
 }
 
 .contact-info a:hover {
