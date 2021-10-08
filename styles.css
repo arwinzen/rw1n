@@ -48,7 +48,6 @@ p {
 	letter-spacing: 1px;
 	text-decoration: none;
 	transition: color 0.25s ease-in-out;
-    /* hover effect takes up entire screen if this isn't present*/
 	transform: translateZ(0);
 }
 
@@ -113,7 +112,6 @@ a {
     opacity: 0;
     width: 0;
     height: 0;
-    /* background-color: #EBECF0; */
     background-color: #fff;
     position: absolute;
     left: 0;
@@ -157,21 +155,17 @@ a {
 .grid-items {
 	display: grid;
     grid-template-columns: 1fr 1fr;
-	/* flex-flow: row wrap;  */
 }
 
 .grid-item {
-    /* flex: 1 50%; */
     padding: 30px 50px 60px;
     min-height: 500px;
     position: relative;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
-    /* display: flex; */
     text-align: center;
     background-color: mintcream;
-    /* color: #fff; */
 }
 
 .grid-item:nth-child(3n+1){
@@ -354,9 +348,6 @@ a {
 
 .about-body {
     display: grid;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* display: none; */
 }
 
 .tech-stack {
@@ -382,8 +373,6 @@ a {
 
 .form-wrapper {
     opacity: 0;
-    /* visibility: hidden; */
-    /* display: none; */
     width: 0;
     height: 0;
     background: #EBECF0;
@@ -436,10 +425,8 @@ label {
   
 
 .user-input {
-    /* font-size: 50px; */
     font-family: inherit;
     border: none;
-    /* box-shadow: 1px 3px 0 black; */
     margin-right: 8px;
     box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
     width: 100%;
@@ -482,23 +469,6 @@ label {
 	right: 2.8vmin;
     cursor: pointer;
 }
-
-/* .button-close .menu-icon-line-1 {
-    transform-origin: center;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 20px;
-    left: 0;
-}
-
-
-.button-close .menu-icon-line-2 {
-    transform-origin: center;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 20px;
-    left: 0;
-} */
 
 .contact-wrapper {
     display: grid;
